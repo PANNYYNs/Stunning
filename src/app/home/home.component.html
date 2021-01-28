@@ -1,0 +1,9 @@
+<div align="center">
+  <div id="home" class="row" >
+    <div  *ngFor="let i of imagesall" style="margin:5px; cursor: pointer; outline:0;">
+      <app-image [routerLink]="['/image',i.id]" [image] = "i" ></app-image>
+    </div>
+  </div>
+</div>
+
+

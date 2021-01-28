@@ -1,0 +1,594 @@
+
+/* iPhone 5/se ตั้ง */
+@media (max-width:320px){
+  #com{
+    display: none;
+  }
+  #phone{
+    max-width: 320px;
+    padding-left:30px; 
+    padding-right:35px; 
+  }
+  #cc{
+    padding-top: 10px;
+    padding-left: 25px;
+  }
+  #size{
+    width: 245px;
+    height: 115px;
+  }
+  #bsize{
+    margin: 5px; 
+    margin-left:60px; 
+    width: 80px;
+    height: 40px;
+  }
+  #Bdownload{
+    font-size:12px;
+  }
+  #likesize{
+    margin: 8px;
+    font-size: 35px;
+  }
+  #numbersize{
+    margin-left: 21px;
+    margin-top: 16px;
+  }
+  #commentsize{
+    margin-top: 5px;
+    font-size: 15px;
+  }
+  #inputcomment3{
+    width: 200px;
+    height: 35px;
+  }
+  #Bsend{
+    width: 200px;
+    height: 30px;
+    font-size: 12px;
+  }
+  #positioncomment{
+    padding-left: 15px;
+  }
+}
+/* iPhone 6/7/8 ตั้ง */
+@media (min-width:321px) and (max-width:375px){
+  #com{
+    display: none;
+  }
+  #phone{
+    max-width: 375px;
+    padding-left:30px; 
+    padding-right:35px; 
+  }
+  #cc{
+    padding-top: 10px;
+    padding-left: 25px;
+  }
+  #size{
+    width: 290px;
+    height: 170px;
+  }
+  #bsize{
+    margin: 5px; 
+    margin-left:80px; 
+    width: 80px;
+    height: 40px;
+  }
+  #Bdownload{
+    font-size:12px;
+  }
+  #likesize{
+    margin: 8px;
+    font-size: 35px;
+  }
+  #numbersize{
+    margin-left: 21px;
+    margin-top: 16px;
+  }
+  #commentsize{
+    margin-top: 5px;
+    font-size: 15px;
+  }
+  #inputcomment3{
+    width: 220px;
+    height: 35px;
+  }
+  #Bsend{
+    width: 220px;
+    height: 30px;
+    font-size: 12px;
+  }
+  #positioncomment{
+    padding-left: 30px;
+  }
+}
+/* iPhone 6/7/8 Plus ตั้ง */
+@media (min-width:376px) and (max-width:414px){
+  #com{
+    display: none;
+  }
+  #phone{
+    max-width: 414px;
+    padding-left:30px; 
+    padding-right:35px; 
+  }
+  #cc{
+    padding-top: 10px;
+    padding-left: 25px;
+  }
+  #size{
+    width: 330px;
+    height: 180px;
+  }
+  #bsize{
+    margin: 5px; 
+    margin-left:100px; 
+    width: 80px;
+    height: 40px;
+  }
+  #Bdownload{
+    font-size:12px;
+  }
+  #likesize{
+    margin: 5px;
+    font-size: 40px;
+  }
+  #numbersize{
+    margin-left: 20px;
+    margin-top: 16px;
+  }
+  #commentsize{
+    margin-top: 5px;
+    font-size: 15px;
+  }
+  #inputcomment3{
+    width: 240px;
+    height: 40px;
+  }
+  #Bsend{
+    width: 240px;
+    height: 35px;
+    font-size: 14px;
+  }
+  #positioncomment{
+    padding-left: 40px;
+  }
+}
+
+/* iPhone 5/se นอน */
+@media (min-width:415px) and (max-width:568px){
+  #com{
+    display: none;
+  }
+  #phone{
+    max-width: 568px;
+    padding-left:80px; 
+    padding-right:80px; 
+  }
+  #cc{
+    padding-top: 20px;
+    padding-left: 25px;
+  }
+  #size{
+    width: 388px;
+    height: 220px;
+  }
+  #bsize{
+    margin: 5px; 
+    margin-left:100px; 
+    width: 100px;
+    height: 40px;
+  }
+  #Bdownload{
+    font-size:16px;
+  }
+  #likesize{
+    margin: 5px;
+    font-size: 45px;
+  }
+  #numbersize{
+    margin-left: 24px;
+    margin-top: 18px;
+  }
+  #commentsize{
+    margin-top: 5px;
+    font-size: 15px;
+  }
+  #inputcomment3{
+    width: 300px;
+    height: 50px;
+  }
+  #Bsend{
+    width: 300px;
+    height: 35px;
+    font-size: 16px;
+  }
+  #positioncomment{
+    padding-left: 45px;
+  }
+}
+
+/* iPhone 6/7/8 นอน */
+@media (min-width:569px) and (max-width:667px){
+  #com{
+    display: none;
+  }
+  #phone{
+    max-width: 667px;
+    padding-left:100px; 
+    padding-right:100px; 
+  }
+  #cc{
+    padding-top: 20px;
+    padding-left: 25px;
+  }
+  #size{
+    width: 448px;
+    height: 260px;
+  }
+  #bsize{
+    margin: 5px; 
+    margin-left:100px; 
+    width: 100px;
+    height: 40px;
+  }
+  #Bdownload{
+    font-size:16px;
+  }
+  #likesize{
+    margin: 5px;
+    margin-left:10px;
+    font-size: 45px;
+  }
+  #numbersize{
+    margin-left: 29px;
+    margin-top: 18px;
+  }
+  #commentsize{
+    margin-top: 5px;
+    font-size: 18px;
+  }
+  #inputcomment3{
+    width: 350px;
+    height: 55px;
+  }
+  #Bsend{
+    width: 350px;
+    height: 35px;
+    font-size: 16px;
+  }
+  #positioncomment{
+    padding-left: 45px;
+  }
+}
+
+/* iPhone 6/7/8 Plus นอน */
+@media (min-width:668px) and (max-width:736px){
+  #com{
+    display: none;
+  }
+  #phone{
+    max-width: 736px;
+    padding-left:120px; 
+    padding-right:120px; 
+  }
+  #cc{
+    padding-top: 20px;
+    padding-left: 25px;
+  }
+  #size{
+    width: 474px;
+    height: 270px;
+  }
+  #bsize{
+    margin: 5px; 
+    margin-left:140px; 
+    width: 100px;
+    height: 40px;
+  }
+  #Bdownload{
+    font-size:16px;
+  }
+  #likesize{
+    margin: 5px;
+    margin-left:10px;
+    font-size: 45px;
+  }
+  #numbersize{
+    margin-left: 29px;
+    margin-top: 18px;
+  }
+  #commentsize{
+    margin-top: 5px;
+    font-size: 18px;
+  }
+  #inputcomment3{
+    width: 370px;
+    height: 55px;
+  }
+  #Bsend{
+    width: 370px;
+    height: 35px;
+    font-size: 16px;
+  }
+  #positioncomment{
+    padding-left: 45px;
+  }
+}
+
+/* iPad ตั้ง */
+@media (min-width:737px) and (max-width:768px){
+  #com{
+    display: none;
+  }
+  #phone{
+    max-width: 768px;
+    padding-left:130px; 
+    padding-right:130px; 
+  }
+  #cc{
+    padding-top: 20px;
+    padding-left: 25px;
+  }
+  #size{
+    width: 484px;
+    height: 270px;
+  }
+  #bsize{
+    margin: 5px; 
+    margin-left:150px; 
+    width: 100px;
+    height: 40px;
+  }
+  #Bdownload{
+    font-size:16px;
+  }
+  #likesize{
+    margin: 5px;
+    margin-left:10px;
+    font-size: 45px;
+  }
+  #numbersize{
+    margin-left: 29px;
+    margin-top: 18px;
+  }
+  #commentsize{
+    margin-top: 5px;
+    font-size: 18px;
+  }
+  #inputcomment3{
+    width: 370px;
+    height: 55px;
+  }
+  #Bsend{
+    width: 370px;
+    height: 35px;
+    font-size: 16px;
+  }
+  #positioncomment{
+    padding-left: 50px;
+  }
+}
+/* iPhone x นอน */
+@media (min-width:769px) and (max-width:812px){
+  #com{
+    display: none;
+  }
+  #phone{
+    max-width: 812px;
+    padding-left:140px; 
+    padding-right:140px; 
+  }
+  #cc{
+    padding-top: 20px;
+    padding-left: 40px;
+  }
+  #size{
+    width: 484px;
+    height: 270px;
+  }
+  #bsize{
+    margin: 5px; 
+    margin-left:150px; 
+    width: 100px;
+    height: 40px;
+  }
+  #Bdownload{
+    font-size:16px;
+  }
+  #likesize{
+    margin: 5px;
+    margin-left:10px;
+    font-size: 45px;
+  }
+  #numbersize{
+    margin-left: 29px;
+    margin-top: 18px;
+  }
+  #commentsize{
+    margin-top: 5px;
+    font-size: 18px;
+  }
+  #inputcomment3{
+    width: 370px;
+    height: 55px;
+  }
+  #Bsend{
+    width: 370px;
+    height: 35px;
+    font-size: 16px;
+  }
+  #positioncomment{
+    padding-left: 55px;
+  }
+}
+
+/* iPad pro */
+/* ตั้ง */
+@media (min-width:813px) and (max-width:1024px){
+  #com{
+    display: none;
+  }
+  #phone{
+    max-width: 1024px;
+    padding-left:150px; 
+    padding-right:150px; 
+  }
+  #cc{
+    padding-top: 20px;
+    padding-left: 50px;
+  }
+  #size{
+    width: 650px;
+    height: 480px;
+  }
+  #bsize{
+    margin: 5px; 
+    margin-left:220px; 
+    width: 100px;
+    height: 40px;
+  }
+  #Bdownload{
+    font-size:16px;
+  }
+  #likesize{
+    margin: 5px;
+    margin-left:10px;
+    font-size: 45px;
+  }
+  #numbersize{
+    margin-left: 29px;
+    margin-top: 18px;
+  }
+  #commentsize{
+    margin-top: 5px;
+    font-size: 20px;
+  }
+  #inputcomment3{
+    width: 500px;
+    height: 80px;
+  }
+  #Bsend{
+    width: 500px;
+    height: 40px;
+    font-size: 18px;
+  }
+  #positioncomment{
+    padding-left: 60px;
+  }
+}
+/* นอน */
+@media (min-width:1025px) and (max-width:1366px){
+  #com{
+    display: none;
+  }
+  #phone{
+    max-width: 1336px;
+    padding-left:180px; 
+    padding-right:180px; 
+  }
+  #cc{
+    padding-top: 20px;
+    padding-left: 50px;
+  }
+  #size{
+    width: 900px;
+    height: 480px;
+  }
+  #bsize{
+    margin: 5px; 
+    margin-left:350px; 
+    width: 100px;
+    height: 40px;
+  }
+  #Bdownload{
+    font-size:16px;
+  }
+  #likesize{
+    margin: 5px;
+    margin-left:10px;
+    font-size: 45px;
+  }
+  #numbersize{
+    margin-left: 29px;
+    margin-top: 18px;
+  }
+  #commentsize{
+    margin-top: 5px;
+    font-size: 20px;
+  }
+  #inputcomment3{
+    width: 780px;
+    height: 80px;
+  }
+  #Bsend{
+    width:780px;
+    height: 40px;
+    font-size: 18px;
+  }
+  #positioncomment{
+    padding-left: 60px;
+  }
+}
+
+
+@media (min-width:1367px){
+  #phone{
+    display: none;
+  }
+  #com{
+    max-width: 1920px;
+    padding-left:180px; 
+    padding-right:180px; 
+  }
+  #cc{
+    padding-top: 20px;
+    padding-left: 0px;
+  }
+  #size{
+    width: 1024px;
+    height: 720px;
+  }
+  #bsize{
+    margin: 5px; 
+    margin-left:20px;
+    margin-top: 50px; 
+    width: 150px;
+    height: 60px;
+  }
+  #Bdownload{
+    margin-top: 8px; 
+    font-size:20px;
+  }
+  #likesize{
+    margin: 5px;
+    margin-left:10px;
+    margin-top: 50px;
+    font-size: 60px;
+  }
+  #numbersize{
+    font-size: 20px;
+    margin-left: 35px;
+    margin-top: 69px;
+  }
+  #commentsize{
+    margin-top: 50px;
+    font-size: 50px;
+  }
+  #inputcomment3{
+    width: 500px;
+    height: 80px;
+  }
+  #Bsend{
+    width: 500px;
+    height: 40px;
+    font-size: 18px;
+  }
+  #positioncomment{
+    padding-left: 10px;
+  }
+}
+
+
+

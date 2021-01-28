@@ -1,0 +1,6 @@
+
+#readdit[class~="dropdown-item"]:hover{
+  color:white;
+  background-color: rgb(243, 83, 83);
+  transition: 0.3s ease-in-out;
+}

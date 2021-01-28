@@ -1,0 +1,17 @@
+<div align="center">
+	<div class="dropdown">
+		<button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    {{explore}}
+  </button>
+		<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+			<a class="dropdown-item" (click)="popular()">Popular</a>
+			<a class="dropdown-item" (click)="upcoimg()">Upcoming</a>
+			<a class="dropdown-item" (click)="latest()">Latest</a>
+		</div>
+	</div>
+	<div id="home" class="row">
+		<div *ngFor="let i of imageall" style="margin:5px; cursor: pointer; outline:0;">
+			<app-image [routerLink]="['/image',i.id]" [image]="i"></app-image>
+		</div>
+	</div>
+</div>

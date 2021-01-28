@@ -1,0 +1,79 @@
+<div id="com"class="container" style="margin:auto">
+  <div *ngFor="let i of images_">
+    <div id="cc" *ngIf="i.id == idUrl" class="row" >
+        <img src={{i.imgURL}} id="size">
+      <div  >
+        <a id="bsize" class="btn btn-primary text-black" href="{{i.imgURL}}"download target="_blank"><label id="Bdownload" >Download</label></a>
+        <i  class="position-relative" *ngIf="isLoggedIn && !check" style="color:#ddd;cursor:pointer;"(click)="like()" >
+          <i style="position:absolute;">
+            <i id="likesize" class="far fa-thumbs-up" aria-hidden="true"></i>
+          </i>
+          <i id="numbersize" style="color:black;position:absolute;">{{number}}</i>
+        </i>
+        <i *ngIf="isLoggedIn && check" style="color:dodgerblue;cursor:pointer;" (click)="dislike()" >
+          <i style="position:absolute;">
+            <i id="likesize" class="far fa-thumbs-up" aria-hidden="true"></i>
+          </i>
+          <i id="numbersize" style="color:black;position:absolute;">{{number}}</i>
+        </i>
+        <i *ngIf="!isLoggedIn" style="color:#ddd;cursor:pointer;"(click)="plaselogin()" >
+          <i style="position:absolute;">
+            <i id="likesize" class="far fa-thumbs-up" aria-hidden="true"></i>
+          </i>
+          <i id="numbersize" style="color:black;position:absolute;">{{number}}</i>
+        </i>
+        <div id="positioncomment">
+          <h2 id="commentsize">Comment</h2>
+          <textarea [(ngModel)]="inputvalue" (keyup)="addcomment2($event,comment.value)" #comment type="text" class="form-control" id="inputcomment3"></textarea>
+          <button id="Bsend" style="margin-top:5px" class="btn btn-warning" (click)="addcomment(comment.value)" type="submit">send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div *ngFor="let c of commentAll" >
+    <div *ngIf=" c.id == idUrl">
+      <hr>
+      <app-comment [comment]="c" [email]="username"></app-comment>
+    </div>
+  </div>
+</div>
+<div id="phone"class="container" style="margin:auto">
+  <div *ngFor="let i of images_">
+    <div id="cc" *ngIf="i.id == idUrl" class="row" >
+        <img src={{i.imgURL}} id="size">
+      <div>
+        <a id="bsize" class="btn btn-primary text-black" href="{{i.imgURL}}"download target="_blank"><label id="Bdownload" >Download</label></a>
+
+        <i  class="position-relative" *ngIf="isLoggedIn && !check" style="color:#ddd;cursor:pointer;"(click)="like()" >
+          <i style="position:absolute;">
+            <i id="likesize" class="far fa-thumbs-up" aria-hidden="true"></i>
+          </i>
+          <i id="numbersize" style="color:black;position:absolute;">{{number}}</i>
+        </i>
+        <i *ngIf="isLoggedIn && check" style="color:dodgerblue;cursor:pointer;" (click)="dislike()" >
+          <i style="position:absolute;">
+            <i id="likesize" class="far fa-thumbs-up" aria-hidden="true"></i>
+          </i>
+          <i id="numbersize" style="color:black;position:absolute;">{{number}}</i>
+        </i>
+        <i *ngIf="!isLoggedIn" style="color:#ddd;cursor:pointer;"(click)="plaselogin()" >
+          <i style="position:absolute;">
+            <i id="likesize" class="far fa-thumbs-up" aria-hidden="true"></i>
+          </i>
+          <i id="numbersize" style="color:black;position:absolute;">{{number}}</i>
+        </i>
+        <div id="positioncomment">
+          <h2 id="commentsize">Comment</h2>
+          <textarea [(ngModel)]="inputvalue" (keyup)="addcomment2($event,comment.value)" #comment type="text" class="form-control" id="inputcomment3"></textarea>
+          <button id="Bsend" style="margin-top:5px" class="btn btn-warning" (click)="addcomment(comment.value)" type="submit">send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div *ngFor="let c of commentAll" >
+    <div *ngIf=" c.id == idUrl">
+      <hr>
+      <app-comment [comment]="c" [email]="username"></app-comment>
+    </div>
+  </div>
+</div>

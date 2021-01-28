@@ -1,0 +1,44 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<div class="navbar-brand" (click)="cc()" routerLink="" style="cursor:pointer;outline:0">
+		<img style="width:30px;height:30px;margin-right:10px;margin-bottom:4px" src="https://firebasestorage.googleapis.com/v0/b/project-fd5f9.appspot.com/o/photo-camera.png?alt=media&token=bb92fdd3-3099-43b6-8e5a-de1e2ae5f013">
+		<a>Stunning</a>
+	</div>
+
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+    <li class="nav-item active">
+	    <a class="nav-link" routerLink="explore" (click)="explore()" >Explore </a>
+    </li>
+			<div class="dropdown">
+				<button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          {{Category}}
+        </button>
+				<div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+					<button [routerLink]="['/search',i]" *ngFor="let i of genres" class="dropdown-item" type="button" (click)="Category_(i)">{{i}}</button>
+				</div>
+			</div>
+		</ul>
+
+		<form class="form-inline my-2 my-lg-0">
+			<button class="btn btn-outline-success my-2 my-sm-0" style="margin-right:5px" routerLink="register" *ngIf="!isLoggedIn">Register</button>
+			<button class="btn btn-outline-info my-2 my-sm-0" routerLink="login" *ngIf="!isLoggedIn">Login</button>
+			<div *ngIf="isLoggedIn" class="btn-group" style="margin-right:5px">
+				<button [routerLink]="['/favourite',email]" class="btn btn-outline-success my-2 my-sm-0"  type="button" *ngIf="isLoggedIn">{{email}}</button>
+				<button type="button" class="btn btn-outline-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <span class="sr-only"></span>
+        </button>
+				<div *ngIf="isLoggedIn" class="dropdown-menu">
+					<a *ngIf="admin == true" class="dropdown-item" [routerLink]="['admin']">Admin</a>
+					<a class="dropdown-item" [routerLink]="['/favourite',email]">Favoutite</a>
+					<a class="dropdown-item" [routerLink]="['/history',email]">History</a>
+					<a class="dropdown-item" style="cursor:pointer;outline:0" (click)="upload()">Upload</a>
+					<div class="dropdown-divider"></div>
+					<a id="readdit" class="dropdown-item" style="cursor:pointer;outline:0" (click)="logout()">Logout</a>
+				</div>
+			</div>
+		</form>
+	</div>
+</nav>

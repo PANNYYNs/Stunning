@@ -1,0 +1,95 @@
+/* iPhone 5/se ตั้ง */
+@media (max-width:320px){
+  #home{
+    width: 320px;
+    padding-top:5px;
+    padding-left:35.5px;
+  }
+}
+
+/* iPhone 6/7/8 ตั้ง */
+@media (min-width:321px) and (max-width:375px){
+  #home{
+    max-width: 375px;
+    padding-top:5px;
+    padding-left:42.5px;
+  }
+}
+
+/* iPhone 6/7/8 Plus ตั้ง */
+@media (min-width:376px) and (max-width:414px){
+  #home{
+    max-width: 414px;
+    padding-top:5px;
+    padding-left:42px;
+  }
+}
+/* iPhone 5/se นอน */
+@media (min-width:415px) and (max-width:568px){
+  #home{
+    max-width: 568px;
+    padding-top:5px;
+    padding-left:49px;
+  }
+}
+
+/* iPhone 6/7/8 นอน */
+@media (min-width:569px) and (max-width:667px){
+  #home{
+    max-width: 667px;
+    padding-top:5px;
+    padding-left:56.5px;
+  }
+}
+
+/* iPhone 6/7/8 Plus นอน */
+@media (min-width:668px) and (max-width:736px){
+  #home{
+    max-width: 736px;
+    padding-top:5px;
+    padding-left:63px;
+  }
+}
+
+/* iPad pro ตั้ง */
+@media (min-width:737px) and (max-width:768px){
+  #home{
+    max-width: 768px;
+    padding-top:5px;
+    padding-left:64px;
+  }
+}
+/* iPhone x นอน */
+@media (min-width:769px) and (max-width:812px){
+  #home{
+    max-width: 812px;
+    padding-top:5px;
+    padding-left:66px;
+  }
+}
+
+/* iPad pro */
+/* ตั้ง */
+@media (min-width:813px) and (max-width:1024px){
+  #home{
+    max-width: 1024px;
+    padding-top:5px;
+    padding-left:72px;
+  }
+}
+/* นอน */
+@media (min-width:1025px) and (max-width:1366px){
+  #home{
+    max-width: 1366px;
+    padding-top:5px;
+    padding-left:102px;
+  }
+}
+
+@media (min-width:1367px){
+  #home{
+    max-width: 1900px;
+    padding-top:5px;
+    padding-left:135px;
+  }
+}

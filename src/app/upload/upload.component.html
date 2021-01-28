@@ -1,0 +1,55 @@
+<div style="width:100%;height:100%;position:absolute;top:-10000px;left:0;z-index:-5000">
+    <img style="opacity:0;"  id="imagesPreview" src="{{imageUrl}}">
+  </div>
+
+<div class="card mx-auto" style="width:50%;margin-top:100px;padding:20px">
+  <div class="input-group mb-3">
+    <div class="custom-file">
+      <input type="file"  class="custom-file-input" accept="image/*" (change)="uploadFile($event)">
+      <label class="custom-file-label" for="inputGroupFile02" aria-describedby="inputGroupFileAddon02">{{name}}</label>
+    </div>
+    <div class="input-group-append">
+      <span  class="input-group-text" id="inputGroupFileAddon02" (click)="startUpload(username)">Upload</span>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="percentage | async as pct">
+  <progress [value]="pct" max="100"></progress>
+  <label class={{str_dark}}>{{ pct | number }}%</label>
+</div>
+
+<div *ngIf="snapshot | async as snap">
+  <div *ngIf="downloadURL as url"></div> 
+</div>
+
+<div class="dropdown" >
+  <button style="margin-left:10px;" class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Genres
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+    <button *ngFor="let i of genres" class="dropdown-item" type="button" (click)="tag(i)">{{i}}</button>
+  </div>
+</div>
+
+<div style="margin:5px;display:inline-block;" *ngFor="let i of tag_1">
+  <div class="d-flex ailgn-items">
+    <a style="font-size:20px;color:white" class="badge badge-primary">{{i}}</a>
+    <a style="width:35px;height:35px;" class="btn btn-danger" (click)="deletetag(i)">
+      <label style="font-size:16px;color:white">x</label>
+    </a>
+  </div>
+</div>
+
+<div id="home">
+  <div id="photo" style="margin:auto" >
+    <div style="background-size:contain;width:100%;height:100%;background-repeat:no-repeat;background-position:center" 
+    id="imagePreview" [style.backgroundImage]="'url('+ imageUrl +')'"></div>
+  </div>
+</div>
+
+ 
+
+
+
+

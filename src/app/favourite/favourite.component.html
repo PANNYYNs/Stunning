@@ -1,0 +1,8 @@
+<div align="center">
+	<span id="fontsize" style="padding-top:20px;" class="badge badge-light">My favourite</span>
+	<div id="home" class="row">
+			<div *ngFor="let i of favourite" style=" margin:5px; cursor: pointer; outline:0">
+				<app-image [routerLink]="['/image',i.id]" [image]="i"></app-image>
+			</div>
+		</div>
+</div>

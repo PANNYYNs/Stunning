@@ -1,0 +1,13 @@
+<div style="font-size:14px">
+    {{comment.email}}
+    <span style="font-size:12px;color:#999">{{comment.date.seconds*1000|timeAgo}}</span>
+    <i *ngIf="comment.email == email" style="cursor:pointer;margin-left:10px;font-size:16px;color:orangered" (click)="delete()" class="fas fa-trash-alt"></i>
+    <div class='d-flex'>
+        <div style="width:97%;">
+            <a style="word-wrap:break-word;">{{comment.comment}}</a>
+        </div>
+    </div>
+</div>
+
+
+

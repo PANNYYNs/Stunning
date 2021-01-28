@@ -1,0 +1,100 @@
+<div id="home" class="btn-group" role="group" aria-label="Basic example" style="margin-bottom:10px">
+	<button id="b1" type="button" class="btn btn-primary">Photo</button>
+	<button id="b2" type="button" class="btn btn-primary">User</button>
+	<button id="b3" type="button" class="btn btn-primary">Graph</button>
+</div>
+
+<div id="1" align="center">
+	<div id="home" class="row">
+		<div *ngFor="let i of imagesall" style="margin:5px; cursor: pointer; outline:0;">
+			<button data-toggle="modal" (click)="getId(i.id)" data-target="#exampleModalCenter" style="position:absolute;z-index:10;margin-left:125px" class="btn btn-danger">delete</button>
+			<app-image [routerLink]="['/image',i.id]" [image]="i"></app-image>
+			<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+				aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="exampleModalLongTitle">Do you want to delete ?</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+							<button type="button" class="btn btn-primary"  (click)="deletephoto()" data-dismiss="modal">Yes</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="2" clign="center">
+	<div id="home"  class="row">
+		<div class="card" style="width: 18rem;">
+			<div class="card-header" align="center">
+				User email
+			</div>
+			<ul *ngFor="let i of userall" class="list-group list-group-flush" align="center">
+				<li class="list-group-item">{{i.email}}</li>
+			</ul>
+		</div>
+		<div class="card" style="width: 18rem;">
+			<div class="card-header" align="center">
+				Create
+			</div>
+			<ul *ngFor="let i of userall" class="list-group list-group-flush" align="center">
+				<li class="list-group-item">{{i.date.seconds *1000 | date:"dd MMMM yyyy"}}</li>
+			</ul>
+		</div>
+		<div class="card" style="width: 18rem;">
+			<div class="card-header" align="center">
+				Last Login
+			</div>
+			<ul *ngFor="let i of userall" class="list-group list-group-flush" align="center">
+				<li class="list-group-item">{{i.datelogin.seconds *1000 | date:"h:mm:ss dd MMMM yyyy "  }}</li>
+			</ul>
+		</div>
+		<div class="card" style="width: 18rem;">
+			<div class="card-header" align="center">
+				Admin
+			</div>
+			<ul *ngFor="let i of userall" class="list-group list-group-flush" align="center">
+				<li *ngIf="i.admin == true" class="list-group-item">
+          <a class="text-success"><b>Yes</b></a>
+					<i data-toggle="modal" (click)="getdata(i.email,i.admin)" data-target="#exampleModalCenter1" style="float:right;cursor:pointer" class="fas fa-ellipsis-v"></i>
+				</li>
+				<li *ngIf="i.admin != true" class="list-group-item">
+          <a class="text-danger"><b>No</b></a>
+					<i data-toggle="modal" (click)="getdata(i.email,i.admin)" data-target="#exampleModalCenter1" style="float:right;cursor:pointer" class="fas fa-ellipsis-v"></i>
+				</li>
+
+				<div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog"
+					aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+					<div class="modal-dialog modal-dialog-centered" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="exampleModalLongTitle">Do you want to change status ? </h5>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+							</div>
+							<div class="modal-body">
+								{{this.email_1}}
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+								<button (click)="change()" type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div id="3">
+	<chart id="home" [type]="typeChart" [data]="dataChart" [options]="optionsChart"></chart>
+</div>
