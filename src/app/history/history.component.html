@@ -1,12 +1,12 @@
 <div align="center">
-  <span id="fontsize" style="padding-top:20px;" class="badge badge-light">History</span>
-  <div id="home" class="row" >
-    <div  *ngFor="let i of history"  >
-      <div *ngIf="idUrl == i.email" style="margin:5px; cursor: pointer; outline:0;">
-        <button id="delete" data-toggle="modal" (click)="getId(i.id)" data-target="#exampleModalCenter" style="position:absolute;z-index:10" class="btn btn-danger">delete</button>
-        <app-image [routerLink]="['/image',i.id]" [image] = "i" ></app-image>
-      </div>
-      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+	<span id="fontsize" style="padding-top:20px;" class="badge badge-light">History</span>
+	<div id="home" class="row">
+		<div *ngFor="let i of history">
+			<div *ngIf="idUrl == i.email" style="margin:5px; cursor: pointer; outline:0;">
+				<button id="delete" data-toggle="modal" (click)="getid(i.id)" data-target="#exampleModalCenter" style="position:absolute;z-index:10" class="btn btn-danger">delete</button>
+				<app-image [routerLink]="['/image',i.id]" [image]="i"></app-image>
+			</div>
+			<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
 				aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
 				<div class="modal-dialog modal-dialog-centered" role="document">
 					<div class="modal-content">
@@ -23,10 +23,6 @@
 					</div>
 				</div>
 			</div>
-    </div>
-  </div>
+		</div>
+	</div>
 </div>
-
-
-
-
